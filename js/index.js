@@ -18,7 +18,7 @@ document.title = "(" + timeText.innerHTML + ") " + "Pomodoro Timer";
 var running = true;
 
 // Play sound when timer ends
-var timerAudio = new Audio("/sounds/hey_listen_loop.mp3");
+var timerAudio = new Audio("./sounds/hey_listen_loop.mp3");
 
 
 
@@ -63,7 +63,7 @@ startButton.addEventListener("click", function (event) {
       document.getElementById("time").style.width = "300px";
       document.getElementById("time").innerHTML = "Time's up!";
       document.title = timeText.innerHTML;
-      document.getElementById("cat-image").src = "/images/dancing-cat.gif";
+      document.getElementById("cat-image").src = "./images/dancing-cat.gif";
     }
   }, 1000);
 });
@@ -151,7 +151,7 @@ pomoButton.addEventListener("click", function (event) {
       document.getElementById("time").style.width = "300px";
       document.getElementById("time").innerHTML = "Time's up!";
       document.title = timeText.innerHTML;
-      document.getElementById("cat-image").src = "/images/dancing-cat.gif";
+      document.getElementById("cat-image").src = "./images/dancing-cat.gif";
     }
   }, 1000);
 });
@@ -159,7 +159,7 @@ pomoButton.addEventListener("click", function (event) {
 // functionality of "Short Break" button
 shortButton.addEventListener("click", function (event) {
     // Setting up everything for "Short Break" display
-  document.getElementById("cat-image").src = "/images/sleepy-cat.gif";
+  document.getElementById("cat-image").src = "./images/sleepy-cat.gif";
   document.getElementById("time").style.width = "175px";
   document.getElementById("time").innerHTML = "05:00";
   stopTimerNow();
@@ -199,7 +199,7 @@ shortButton.addEventListener("click", function (event) {
 
     // Display excited cat when break is about to end
     if (minutes < 1) {
-      document.getElementById("cat-image").src = "/images/excited-cat.gif";
+      document.getElementById("cat-image").src = "./images/excited-cat.gif";
     }
 
     document.title = "(" + timeText.innerHTML + ") " + "Pomodoro Timer";
@@ -210,7 +210,7 @@ shortButton.addEventListener("click", function (event) {
       document.getElementById("time").style.width = "300px";
       document.getElementById("time").innerHTML = "Time's up!";
       document.title = timeText.innerHTML;
-      document.getElementById("cat-image").src = "/images/dancing-cat.gif";
+      document.getElementById("cat-image").src = "./images/dancing-cat.gif";
     }
   }, 1000);
 });
@@ -218,7 +218,7 @@ shortButton.addEventListener("click", function (event) {
 // functionality of "Long Break" button
 longButton.addEventListener("click", function (event) {
   // Setting up everything for "Long Break" display
-  document.getElementById("cat-image").src = "/images/sleeping-cat.gif";
+  document.getElementById("cat-image").src = "./images/sleeping-cat.gif";
   document.getElementById("time").style.width = "175px";
   document.getElementById("time").innerHTML = "10:00";
   stopTimerNow();
@@ -258,7 +258,7 @@ longButton.addEventListener("click", function (event) {
     
     // Display excited cat when break is about to end
     if (minutes < 1) {
-      document.getElementById("cat-image").src = "/images/excited-cat.gif";
+      document.getElementById("cat-image").src = "./images/excited-cat.gif";
     }
 
     document.title = "(" + timeText.innerHTML + ") " + "Pomodoro Timer";
@@ -270,7 +270,7 @@ longButton.addEventListener("click", function (event) {
       document.getElementById("time").style.width = "300px";
       document.getElementById("time").innerHTML = "Time's up!";
       document.title = timeText.innerHTML;
-      document.getElementById("cat-image").src = "/images/dancing-cat.gif";
+      document.getElementById("cat-image").src = "./images/dancing-cat.gif";
     }
   }, 1000);
 });
@@ -297,6 +297,6 @@ function checkCat() {
   if (minutes >= 5) {
     document.getElementById("cat-image").src = randCatGif;
   } else if (minutes < 5) {
-    document.getElementById("cat-image").src = "/images/excited-cat.gif";
+    document.getElementById("cat-image").src = "./images/excited-cat.gif";
   }
 }
