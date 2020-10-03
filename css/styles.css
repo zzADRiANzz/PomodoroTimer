@@ -1,0 +1,139 @@
+html, body, .main-container {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(168, 127, 187);
+  margin: 0;
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Containers */
+.main-container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/small-transparent-cat.png) repeat 50%;
+  background-size: 65px;
+  min-width: 325px;
+}
+
+.timer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-options-section {
+  margin-top: 30px;
+}
+
+/* Misc */
+#time {
+  font-size: 4rem;
+  margin: 45px 0;
+  width: 175px;
+}
+
+img {
+  width: 150px;
+}
+
+/* Background moving gradient style */
+body {
+  background: linear-gradient(218deg, #bb7fa9, #a87fbb, #7fa8bb, #7f81bb);
+  background-size: 800% 800%;
+
+  -webkit-animation: BackgroundGradient 31s ease infinite;
+  -moz-animation: BackgroundGradient 31s ease infinite;
+  animation: BackgroundGradient 31s ease infinite;
+}
+
+@-webkit-keyframes BackgroundGradient {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+@-moz-keyframes BackgroundGradient {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+@keyframes BackgroundGradient {
+  0%{background-position:88% 0%}
+  50%{background-position:13% 100%}
+  100%{background-position:88% 0%}
+}
+
+/* Button styling */
+button {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #7c7c7c;
+  margin:0 0.6em;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: "Montserrat", sans-serif;
+  font-weight:300;
+  font-size: 1rem;
+  color:#000000;
+  text-align:center;
+  transition: all 0.2s;
+}
+button:hover{
+  color:#FFFFFF;
+  background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+  button{
+  display:block;
+  margin:0.4em auto;
+  }
+}
+
+#startButton, #stopButton, #resetButton {
+  height: 50px;
+}
+
+/* Button coloring */
+#startButton {
+  background-color: #499653d5;
+}
+#stopButton {
+  background-color: #d85858d5;
+}
+#resetButton {
+  background-color: #cec970d5;
+}
+#pomoButton {
+  background-color: #3c34a867;
+}
+#shortButton {
+  background-color: #7434a867;
+}
+#longButton {
+  background-color: #a8347867;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .buttons-section {
+    display: flex;
+  }
+  #pomoButton, #shortButton, #longButton {
+    width: 90%;
+  }
+}
