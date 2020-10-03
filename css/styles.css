@@ -45,6 +45,7 @@ h1 {
   font-size: 4rem;
   margin: 45px 0;
   width: 175px;
+  max-width: 175px;
 }
 
 img {
