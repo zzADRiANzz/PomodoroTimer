@@ -280,10 +280,10 @@ var catImage = document.getElementById("cat-image");
 function randomStartCat() {
   var cats = 
   {
-  1: "/images/cat-on-phone.gif", 
-  2: "/images/silly-cat.gif", 
-  3: "/images/licking-cat.gif",
-  4: "/images/desk-cat.gif"
+  1: "./images/cat-on-phone.gif", 
+  2: "./images/silly-cat.gif", 
+  3: "./images/licking-cat.gif",
+  4: "./images/desk-cat.gif"
   };
   var keys = Object.keys(cats);
   var randCatGif = cats[keys[ keys.length * Math.random() << 0]];
